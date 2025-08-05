@@ -1,158 +1,160 @@
-/* styles.css */
-
-/* Reset básico */
+/* Resetando o estilo */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Corpo do site */
 body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to right, #0066cc, #003366);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #001f3d, #003366);
     color: #fff;
-    line-height: 1.6;
+    padding: 0;
+    margin: 0;
 }
 
-/* Header e Navegação */
+/* Estilo do header e menu */
 header {
-    background-color: #003366;
-    padding: 30px 0;
+    background-color: #001f3d;
+    padding: 20px;
     text-align: center;
-    border-bottom: 2px solid #0055a5;
 }
 
-header .logo h1 {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 3rem;
-    margin-bottom: 10px;
+header nav ul {
+    list-style-type: none;
 }
 
-header .logo p {
-    font-size: 1.2rem;
-    font-weight: 300;
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
+header nav ul li a {
+    color: #00aaff;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    font-size: 18px;
+    transition: color 0.3s;
 }
 
-nav ul li a:hover {
-    color: #0099cc;
-    transform: scale(1.1);
+header nav ul li a:hover {
+    color: #fff;
 }
 
-/* Seção de Introdução */
-.section-inicio {
-    padding: 80px 20px;
+/* Seções principais */
+section {
+    padding: 40px;
+    margin: 20px 0;
+}
+
+/* Estilo de Início */
+.home-section {
     text-align: center;
-    background: linear-gradient(to top, #004080, #003366);
+    background: linear-gradient(to right, #003366, #001f3d);
 }
 
-.section-inicio h2 {
-    font-size: 3rem;
+.home-section h1 {
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
-.section-inicio p {
-    font-size: 1.3rem;
-    font-weight: 300;
+.home-section p {
+    font-size: 1.2em;
 }
 
-/* Seção de Projetos */
-.section-projetos, .section-atualizacoes, .section-contato, .section-sobre {
-    padding: 60px 20px;
-    background: #0055a5;
-    margin: 40px 0;
-    border-radius: 8px;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+/* Estilo de Projetos */
+.projects-section {
+    background-color: #004a8b;
 }
 
-.section-projetos h2 {
-    font-size: 2.5rem;
+.projects-section h2 {
+    font-size: 2.5em;
+    text-align: center;
     margin-bottom: 20px;
 }
 
-.portfolio {
+.project-list {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.project {
-    background: #003366;
-    padding: 25px;
-    margin: 15px;
-    width: 250px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+.project-item {
+    background-color: #003366;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 45%;
+    transition: transform 0.3s;
 }
 
-.project h3 {
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+.project-item:hover {
+    transform: translateY(-10px);
 }
 
-.project p {
-    font-size: 1rem;
+.project-item h3 {
+    font-size: 1.8em;
 }
 
-/* Formulário */
-form {
+.project-item p {
+    font-size: 1.1em;
+}
+
+/* Estilo de Atualizações */
+.updates-section {
+    background-color: #002f4d;
+    color: #aaa;
+}
+
+/* Estilo de Contato */
+.contact-section {
+    background-color: #004a8b;
+}
+
+.contact-section form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     max-width: 400px;
     margin: 0 auto;
 }
 
-form input, form button {
+.contact-section input, .contact-section textarea {
     padding: 12px;
-    font-size: 1rem;
     border: none;
     border-radius: 5px;
+    font-size: 1em;
 }
 
-form input {
-    background-color: #fff;
-    color: #333;
-}
-
-form button {
-    background-color: #0099cc;
+.contact-section button {
+    background-color: #00aaff;
     color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
-form button:hover {
-    background-color: #007bb5;
+.contact-section button:hover {
+    background-color: #0088cc;
 }
 
-/* Footer */
-footer {
+/* Estilo de Sobre */
+.about-section {
     background-color: #003366;
-    padding: 20px;
+    color: #bbb;
+}
+
+/* Rodapé */
+footer {
+    background-color: #001f3d;
     text-align: center;
-    color: #fff;
+    padding: 20px;
+    color: #888;
+}
+
+footer p {
+    font-size: 1em;
 }
