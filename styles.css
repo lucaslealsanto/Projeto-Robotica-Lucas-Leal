@@ -1,0 +1,158 @@
+/* styles.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #0066cc, #003366);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Header e Navegação */
+header {
+    background-color: #003366;
+    padding: 30px 0;
+    text-align: center;
+    border-bottom: 2px solid #0055a5;
+}
+
+header .logo h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header .logo p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0099cc;
+    transform: scale(1.1);
+}
+
+/* Seção de Introdução */
+.section-inicio {
+    padding: 80px 20px;
+    text-align: center;
+    background: linear-gradient(to top, #004080, #003366);
+}
+
+.section-inicio h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.section-inicio p {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/* Seção de Projetos */
+.section-projetos, .section-atualizacoes, .section-contato, .section-sobre {
+    padding: 60px 20px;
+    background: #0055a5;
+    margin: 40px 0;
+    border-radius: 8px;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.section-projetos h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project {
+    background: #003366;
+    padding: 25px;
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.project p {
+    font-size: 1rem;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form input, form button {
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+form input {
+    background-color: #fff;
+    color: #333;
+}
+
+form button {
+    background-color: #0099cc;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #007bb5;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
